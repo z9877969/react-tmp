@@ -1,10 +1,6 @@
-# lesson-03(events & state)
+# Lesson-05(Q&A mod_1-2)
 
-
-## 1) statefull vs stateless
-## 2) counter
-## 3) open cart
-## 4) add product vulue
-## 5) add product to cart
-
-## 6) filter
+###1) static priority
+###1) select -> filter todo by priority
+###2) filter products by model + calc
+###3) module.scss, vars
