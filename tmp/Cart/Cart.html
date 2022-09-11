@@ -1,10 +1,20 @@
-const Cart = () => {
-  return (
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Cart.css" />
+  </head>
+  <body>
+
     <div class="cart">
       <button class="cart-btn-close" type="button">
-        <svg class="cart-icon-close">
+        <!-- <svg class="cart-icon-close">
           <use href="../../code/src/assets/icons/sprite.svg#icon-cross"></use>
-        </svg>
+        </svg> -->
+        x
       </button>
       <ul class="cart-products">
         <li class="cart-product">
@@ -19,15 +29,14 @@ const Cart = () => {
             <span class="cart-currency">UAH</span>
           </div>
           <button class="cart-btn-remove" type="button">
-            <svg class="cart-icon-remove">
+            <!-- <svg class="cart-icon-remove">
               <use href="../../code/src/assets/icons/sprite.svg#icon-bin2"></use>
-            </svg>
+            </svg> -->
+            Remove
           </button>
         </li>
       </ul>
-      <button class="cart-btn-order" type="button">Оформить</button>
+      <button class="cart-btn-order" type="button">Submit</button>
     </div>
-  );
-};
-
-export default Cart;
+  </body>
+</html>

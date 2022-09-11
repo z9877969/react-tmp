@@ -1,28 +1,23 @@
-import PropTypes from "prop-types";
 import ProductsListItem from "../ProductsListItem/ProductsListItem";
-import { ProductsListStyled } from "./ProductsList.styled";
-// import "./Products.css";
 
 const ProductsList = (props) => {
-  const { products, handleAddProductToCart } = props;
+  const { products } = props;
   return (
     <section>
-      <ProductsListStyled>
+      <ul className="products">
         {products.map((el) => (
           <ProductsListItem
             key={el.id}
+            // url={el.url}
+            // model={el.model}
+            // price={el.price}
+            // currency={el.currency}
             {...el}
-            handleAddProductToCart={handleAddProductToCart}
           />
         ))}
-      </ProductsListStyled>
+      </ul>
     </section>
   );
-};
-
-ProductsList.propTypes = {
-  products: PropTypes.array.isRequired,
-  handleAddProductToCart: PropTypes.func.isRequired,
 };
 
 export default ProductsList;

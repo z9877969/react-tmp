@@ -1,6 +1,5 @@
 .filter {
   width: 200px;
-  height: 300px;
   padding: 10px;
   background-color: green;
 }
@@ -19,7 +18,7 @@
   padding-left: 10px;
 }
 
-.item {
+.filter-item {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,7 @@
     clip: rect(0 0 0 0);
   } */
 
-.input {
+.filter-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -48,16 +47,14 @@
   clip: rect(0 0 0 0);
 }
 
-.label {
+.filter-label {
+  position: relative;
   display: flex;
   align-items: center;
-}
-
-.label-content {
   font-size: 18px;
 }
 
-.label::before {
+.filter-label::before {
   display: inline-block;
   content: "";
   width: 10px;
@@ -69,7 +66,7 @@
   /* background-color: olive; */
 }
 
-.input:checked + .label::before {
+.filter-input:checked + .filter-label::before {
   border: 2px solid #d9e5f1;
   background-color: #0f7be0;
 }
