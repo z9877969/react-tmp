@@ -1,17 +1,14 @@
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import Cart from "./Cart/Cart";
-import Counter from "./Counter/Counter";
+import SearchForm from "../components/SearchForm/SearchForm";
+import NewsPage from "./NewsPage/NewsPage";
+// import Modal from "../components/Modal/Modal";
 
 const App = () => {
-  console.log("App");
   return (
-    <>
-      {/* <Header />
-      <Main />
-      <Cart /> */}
-      <Counter />
-    </>
+    <div className="App">
+      <SearchForm />
+      <NewsPage />
+      {/* <Modal /> */}
+    </div>
   );
 };
 
